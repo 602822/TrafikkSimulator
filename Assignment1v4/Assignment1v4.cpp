@@ -293,7 +293,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 			// Pusher bil objecter i vektorene, med ein viss sansynlighet
 			if (rand() % 100 <= pw) {
-				cars.push_back(new Car(150, 300, 210, 320));
+				cars.push_back(new Car(50, 300, 110, 320));
 			}
 
 			if (rand() % 100 <= pn) {
@@ -398,8 +398,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		HGDIOBJ horg = SelectObject(hdc, greyBrush);
 
 
-		Rectangle(hdc, 150, 350, 1050, 250);  //vei horisonal
-		Rectangle(hdc, 550, 0, 650, 600);    // vei vertikal
+		Rectangle(hdc, 0, 350, 1350, 250);  //vei horisonal
+		Rectangle(hdc, 550, 0, 650, 700);    // vei vertikal
 
 
 		//Sannsynlghet tekst på skjermen
